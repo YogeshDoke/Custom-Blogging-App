@@ -21,4 +21,4 @@ if [ -z "$email" ]; then
     echo "Email must not be empty!"
     break;
 fi
-mvn -e -q -f pom.xml exec:java -Dexec.mainClass="me.woemler.springblog.security.CreateAdminUser" -Dexec.args="$user $pw $email"
+mvn -e -q -f pom.xml exec:java -Dexec.mainClass="me.yogesh.springblog.security.CreateAdminUser" -Dexec.args="$user $pw $email"
